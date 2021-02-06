@@ -1,0 +1,11 @@
+[Unit]
+Description=Nmapperbot service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/nmapperbot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
